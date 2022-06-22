@@ -9,18 +9,26 @@
 ## Table of contents
 
 - [Preview](#preview)
+- [Why](#why)
 - [Installation](#installation)
   - [Requirements](#requirements)
   - [Install Pulldozer](#install-pulldozer)
 - [Usage](#usage)
   - [Options](#options)
 - [Configuration File](#configuration-file)
+- [Adding Rules](#adding-rules)
 - [License](#license)
 
 # Preview
 <p align="center">
     <img src="./statics/pulldozer.gif" width="80%">
 </p>
+
+
+# Why
+In some way, `CD`, continous delivery, as defined today looks too much like new JS framework (i'm joking don't kill me…). New configurations, "new way", new convention, new format…
+
+It's exhausting to update each time workflow, even if it's for better, what about old classic way that **just works**. What about **full compliant** manifest ?
 
 # Installation
 In order to work with `Pulldozer` you need at least three dependencies to be installed and reachable through you `$PATH`.
@@ -194,6 +202,18 @@ Here is default template :
   ]
 }
 ```
+
+# Adding Rules
+
+You can add custom rules to works with differents technologies deployments. You currently have an examle with `django` application working with `gunicorn`, but feel free to add your.
+
+## How it works ?
+
+Create a new `shell` file un `rules` directory.
+
+Put a `function` named exactly with your `rule` parameter, it will be call directly after `source` your custome rule configuration.   
+
+Leave the magic do the rest.
 
 # License
 
