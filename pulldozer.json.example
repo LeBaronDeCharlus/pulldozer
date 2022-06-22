@@ -1,0 +1,10 @@
+{
+  "prod_branch" : "main", 
+  "rule": "django",
+  "slack": [
+    {
+      "webhook": "https://hooks.slack.com/services/xxxx/xxx/xxxx",
+      "mention": "U1AB2C3D4"
+    }
+  ]
+}
