@@ -47,6 +47,8 @@ Please install the following :
 - curl
 - git
 
+Note : be sure you have a correct `ssh_key` configured with your git repository.
+
 ## Install Pulldozer
 You can follow the following commands :
 ```
