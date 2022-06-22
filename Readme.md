@@ -20,10 +20,18 @@
 - [License](#license)
 
 # Preview
+
+## CLI
 <p align="center">
-    <img src="./statics/pulldozer.gif" width="80%">
+    <img src="./statics/pulldozer.gif">
 </p>
 
+
+## SLACK integration
+<p align="center">
+    <img src="./statics/slack_2.png">
+    <img src="./statics/slack.png">
+</p>
 
 # Why
 In some way, `CD`, continous delivery, as defined today looks too much like new JS framework (i'm joking don't kill me…). New configurations, "new way", new convention, new format…
