@@ -223,7 +223,7 @@ deploy() {
 
   if [[ ${dry_run} -eq 1 ]] ; then
     gdiff=$("${GIT}" --no-pager diff --name-only origin/"${GIT_PROD_BRANCH}")
-    stop_loader "U2728" "[Dry Run] files changed if deploying : ${GREEN}${gdiff}${NOFORMAT}"
+    stop_loader "U2728" "[Dry Run] files changed if deploying :\n${GREEN}${gdiff}${NOFORMAT}"
     return 0
   fi 
 
