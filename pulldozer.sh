@@ -11,10 +11,6 @@ tput civis # Hide the terminal cursor
 
 script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd -P)
 PROJECT="$(basename $(pwd))"
-echo ${script_dir}
-echo ${PROJECT}
-echo $(pwd)
-exit 1
 
 catch_error() {
   # Catch error & alert
