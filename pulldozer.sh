@@ -55,7 +55,7 @@ Available options:
 
 -h, --help            Print this help and exit
 -b, --branch          On which branch pull
--c, --config-file     Where pulldozer.json is located, default in ./pulldozer.json
+-c, --config-file     Where pulldozer.json is located, default in ./.pulldozer.json
 -d, --daemon-fmt      Will clean output for daemon journalctl
 -D, --dry-run         Dry-run
 -m, --mention-slack   Mention a user on slack webhook, expected user_id
@@ -186,7 +186,7 @@ JQ="$(which jq)"
 
 read_config() {
   if [[ ! "${config_file}" ]] ; then
-    config_file="./pulldozer.json"
+    config_file="./.pulldozer.json"
     if [ ! -f "${config_file}" ]; then
       die "Could not find config file : ${config_file}"
     fi

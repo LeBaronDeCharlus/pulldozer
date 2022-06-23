@@ -69,7 +69,7 @@ Available options:
 
 -h, --help            Print this help and exit
 -b, --branch          On which branch pull
--c, --config-file     Where pulldozer.json is located, default in ./pulldozer.json
+-c, --config-file     Where pulldozer.json is located, default in ./.pulldozer.json
 -d, --daemon-fmt      Will clean output for daemon journalctl
 -D, --dry-run         Dry-run
 -m, --mention-slack   Mention a user on slack webhook, expected user_id
@@ -80,7 +80,7 @@ Available options:
 ```
 
 # Usage
-There are few arguments you can use to run your continous integration, most of them can be defined in your configuration file `pulldozer.json` (see pulldozer.json.example file).
+There are few arguments you can use to run your continous integration, most of them can be defined in your configuration file `.pulldozer.json` (see pulldozer.json.example file).
 
 ## Options
 
@@ -110,7 +110,7 @@ pulldozer -b my-branch
 
 ```shell
 # e.g
-pulldozer -c /path/to/pulldozer.json 
+pulldozer -c /path/to/.pulldozer.json 
 ```
 
 | Parameter | Type     | Description                |
