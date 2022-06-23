@@ -29,8 +29,8 @@
 
 ## SLACK integration
 <p align="center">
-    <img src="./statics/slack_2.png">
     <img src="./statics/slack.png">
+    <img src="./statics/slack_2.png">
 </p>
 
 # Why
