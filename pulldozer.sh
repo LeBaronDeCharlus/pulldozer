@@ -207,7 +207,7 @@ read_config() {
 
 # Slack hook
 slack_send() {
-  if [[ ${slack_webhook} ]]; then
+  if [[ ${webhook} ]]; then
     message="${1}"
     "${CURL}" -s -X POST -H 'Content-type: application/json' --data "{\"text\":\"${message}\"}" "${webhook}"
   fi
