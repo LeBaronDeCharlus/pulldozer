@@ -10,7 +10,7 @@ tput civis # Hide the terminal cursor
 
 
 script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd -P)
-PROJECT="$(basename $(pwd))"
+PROJECT="$(basename "$(pwd)")"
 
 catch_error() {
   # Catch error & alert
@@ -207,8 +207,10 @@ read_config() {
 
 # Slack hook
 slack_send() {
-        message="${1}"
-        "${CURL}" -s -X POST -H 'Content-type: application/json' --data "{\"text\":\"${message}\"}" "${webhook}"
+  if [[ ${slack_webhook} ]]; then
+    message="${1}"
+    "${CURL}" -s -X POST -H 'Content-type: application/json' --data "{\"text\":\"${message}\"}" "${webhook}"
+  fi
 }
 
 
