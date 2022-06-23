@@ -136,7 +136,6 @@ play_loader() {
 start_loader() {
   if [[ ${silent} -ne 1 ]] && [[ ${daemon} -ne 1 ]]; then
     active_loading_animation=( "${@}" )
-    # Extract the delay between each frame from array BLA_active_loading_animation
     loading_animation_frame_interval="${active_loading_animation[0]}"
     unset "active_loading_animation[0]"
     tput civis # Hide the terminal cursor
