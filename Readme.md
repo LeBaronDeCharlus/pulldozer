@@ -17,6 +17,7 @@
   - [Options](#options)
 - [Configuration File](#configuration-file)
 - [Adding Rules](#adding-rules)
+- [Contributors](#contributors)
 - [License](#license)
 
 # Preview
@@ -224,6 +225,12 @@ Create a new `shell` file un `rules` directory.
 Put a `function` named exactly with your `rule` parameter, it will be call directly after `source` your custome rule configuration.   
 
 Leave the magic do the rest.
+
+# Contributors
+
+<a href="https://github.com/kaderovski/shloader/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kaderovski/shloader" />
+</a>
 
 # License
 
